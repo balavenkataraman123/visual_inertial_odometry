@@ -3,7 +3,11 @@ but I'm tired of perfecting it and honestly... it provides really good odometry 
 So screw it. Here you go. Post any issues you have and I'll try to get around to answering/fixing them. 
 I'm using an OAK-D DepthAI camera (OpenCV AI Kit - Depth) but you can write your own driver also. 
 
-I can view the pose in Unity using this script (be sure to set the exe path to where you built the VIO): 
+I can view the pose in Unity using this script. 
+Be sure to set the exe path to where you built the VIO, 
+and to create a parent transform in the editor to scale the position): 
+Make sure the IMU outputs the correct rotation. That's on you. 
+Also provide the baseline in cm.
 
 ```csharp
 using System;
